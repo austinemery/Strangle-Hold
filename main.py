@@ -1,6 +1,8 @@
+# py tkinter
+
 # This is the main file
 def main():
-    print("CUCK MY ASS!")
+    print("no fun allowed")
 
 
 if __name__ == "__main__":
