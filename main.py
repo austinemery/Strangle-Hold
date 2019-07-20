@@ -1,4 +1,6 @@
 # py tkinter
+# python threads
+# py tesseract
 
 # This is the main file
 def main():
