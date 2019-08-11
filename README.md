@@ -1,8 +1,20 @@
 # Strangle-Hold
 
+A project for the lazy
+
 ## Requirements:
 
 ### Python 3.7:
+
+##### Windows:
+
+[64-bit Installer]{/bin/installers/python-3.7.4-amd64.exe}
+
+### Pyglet:
+
+```
+pip install pyglet
+```
 
 ### Tesseract OCR:
 
@@ -14,8 +26,21 @@
 
 **Note:** Need to add the install directory (usually C:\Program Files\Tesseract-OCR) to the environment path after installation. 
 
+##### Linux:
+
+```
+sudo apt install tesseract-ocr
+sudo apt install libtesseract-dev
+```
+
+##### Mac:
+
+```
+brew install tesseract
+```
+
 ### Pytesseract:
 
 ```
-> pip install pytesseract
+pip install pytesseract
 ```

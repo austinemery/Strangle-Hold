@@ -1,4 +1,4 @@
-# py tkinter
+# Pyglet
 # python threads
 # py tesseract
 
