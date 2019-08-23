@@ -8,7 +8,7 @@ A project for the lazy
 
 ##### Windows:
 
-[64-bit Installer]{/bin/installers/python-3.7.4-amd64.exe}
+[64-bit Installer](/bin/installers/python-3.7.4-amd64.exe)
 
 ### Pyglet:
 
