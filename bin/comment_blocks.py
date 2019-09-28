@@ -2,17 +2,11 @@
 # Section A | File Header Comments
 #
 
-'''
-    Filename:
-    Date:
-    Purpose:
-
-    -----------------------------------------------------
-    Version     Date        Author      Description
-    -----------------------------------------------------
-    <#.#>       000000      F.LastName  Description of the changes that you made.
-                                        This will also be the commit message.
-'''
+# =============================================================================
+# Name: gui.py
+# Date Created: 9/28/2019
+# Purpose: Define a gui class for the Strangle Hold
+# =============================================================================
 
 #
 # Section B | Section Header Comments
@@ -26,17 +20,17 @@
 # Section C | Function Block Comments
 #
 
-'''
-    Procedure:      <function name>
-    Args:           <type>, <descr.>
-                    <type>, <descr.>
-    Return:         <type>, <descr.>
-                    <type>, <descr.>
-    Description:    A brief description of the function and its goals.
-    Algorithm:      If a non-obvious algorithm is present within the
-                    function then it is to be illuminated here.
-    Author:         F.Lastname    
-'''
+# =============================================================================
+#   Procedure:      <function name>
+#   Args:           <type>, <descr.>
+#                   <type>, <descr.>
+#   Return:         <type>, <descr.>
+#                   <type>, <descr.>
+#   Description:    A brief description of the function and its goals.
+#   Algorithm:      If a non-obvious algorithm is present within the
+#                   function then it is to be illuminated here.
+#   Author:         F.Lastname
+# =============================================================================
 
 #
 # Section D | TODO Comments
@@ -49,6 +43,4 @@
 #
 
 # 1.    Attempt to keep each comment line less than 80 characters.
-#       Attempt to keep each code line less than 108 characters.
-# 2.    TABS NOT SPACES
-# 3.    For every non-obvious line of code, it must be described by an inline comment
+# 2.    Attempt to keep each code line less than 108 characters.

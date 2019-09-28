@@ -44,3 +44,9 @@ brew install tesseract
 ```
 pip install pytesseract
 ```
+
+### Pyscreenshot:
+
+```
+pip install pyscreenshot
+```

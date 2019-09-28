@@ -1,6 +1,8 @@
-# Pyglet
-# python threads
-# py tesseract
+'''
+    Filename: main.py
+    Date:     8/30/2019
+    Purpose:  Start all threads
+'''
 
 import threading
 import queue
@@ -15,16 +17,14 @@ queueLock = threading.Lock()
 
 def main():
 
-    data_queue = queue.Queue()
+    maingui = gui.Gui()
+    statemachine = state_machine.StateMachine()
 
-    state_thread = threading.Thread(target=state_machine.run, args=(data_queue, queueLock))
-    state_thread.start()
+    maingui.start()
+    statemachine.start()
 
-    queueLock.acquire()
-    data_queue.put('bin/test_image_1.png')
-    queueLock.release()
-
-    state_thread.join()
+    maingui.end()
+    statemachine.end()
 # End main
 
 

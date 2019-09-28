@@ -1,30 +1,36 @@
-'''
-    Filename: state_machine.py
-    Date:     8/11/2019
-    Purpose:  To control the state and transitions requirements for those states.
+# =============================================================================
+# Name: gui.py
+# Date Created: 8/11/2019
+# Purpose: Define a gui class for the Strangle Hold
+# =============================================================================
 
-    -----------------------------------------------------
-    Version     Date        Author      Description
-    -----------------------------------------------------
-    <0.1>       8/11/2019   A.Emery
-'''
+# =============================================================================
+# IMPORTS
+# =============================================================================
 
 from PIL import Image
 import pytesseract
 import queue
 import threading
 
+# =============================================================================
+# GLOBALS
+# =============================================================================
 
-def run(data_queue, lock):
-    flag = True
+# =============================================================================
+# CLASS DEFINITION
+# =============================================================================
 
-    while flag:
-        if not data_queue.empty():
+class StateMachine:
 
-            lock.acquire()
-            name = data_queue.get()
-            lock.release()
-            print(pytesseract.image_to_string(Image.open(str(name))))
-            flag = False
+    def __init__(self):
+        self.thread = threading.Thread(target=self.statethread)
 
-# End run
+    def start(self):
+        self.thread.start()
+
+    def end(self):
+        self.thread.join()
+
+    def statethread(self):
+        print(pytesseract.image_to_string(Image.open("bin/test_image_1.png")))
